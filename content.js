@@ -39,4 +39,10 @@ function Skip() {
         }
         console.log("Ad banner is skipped.")
     }
+
+    // Skip Ad
+    if (document.documentElement.getElementsByClassName("ytp-ad-skip-button-modern").length > 0) {
+        document.documentElement.getElementsByClassName("ytp-ad-skip-button-modern")[0].click();
+        console.log("Ad is skipped.")
+    }
 }
